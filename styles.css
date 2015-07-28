@@ -1,0 +1,7 @@
+body #number:nth-child(2n){
+  color: red;
+}
+
+body #number:nth-child(2n+1){
+  background-color: azure;
+}
