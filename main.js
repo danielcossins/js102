@@ -1,5 +1,6 @@
 function sortArr(arr){
   var newArr = arr.sort();
+  console.log(newArr);
   return newArr;
 }
 
@@ -16,10 +17,10 @@ function over25(arr){
 var $button = $('#button');
 var $input = $('#input');
 $button.click(function(){
-  var stringArray = ($input.val()).split(",");
+  var stringArray = ($input.val()).split(",").map(Number);
   var newStringArray = sortArr(over25(stringArray));
 
   for(var i=0; i<newStringArray.length; i++){
-    $('form').after("<div id='number'>"+newStringArray[i]+"</div>");
+    $('form').after("<div class='number'>"+newStringArray[i]+"</div>");
   }
 });
