@@ -1,6 +1,8 @@
 function sortArr(arr){
-  var newArr = arr.sort();
-  console.log(newArr);
+  var newArr = arr.sort(function(a, b){
+    return a-b;
+  });
+  // console.log(newArr);
   return newArr;
 }
 
